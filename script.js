@@ -27,8 +27,8 @@ $(document).ready(function() {
 
   $("#submit").click(function() {
     var data = {
-      name: $(".idea").val(),
-      description: $(".description").val(),
+      name: $(".text").val(),
+      // description: $(".description").val(),
       content: ""
     };
     listData.push(data);
