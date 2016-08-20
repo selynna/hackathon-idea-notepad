@@ -14,24 +14,36 @@ html, body {
     background-color: #5229a3;
     width: 20%; 
     color: #C7B2F1;
-    
+    position: relative;
 }
 
 .button-panel {
-    float: right;
-    margin-top: 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 9px;
 }
 
 .button {
     background-color: #ECE9F2;
-    margin-right: 8px;
     color: #49425B;
-    width: 25px;
-    height: 25px;
     border-radius: 50%;
     text-align: center;
     vertical-align: middle;
     float: right;
+    font-weight: 500;
+}
+
+
+.add_button {
+    background-color: #ECE9F2;
+    margin-right: auto;
+    margin-left: auto;
+    color: #49425B;
+    width: 80%;
+    height: 25px;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 600;
 }
 
 .entries {
@@ -59,12 +71,14 @@ html, body {
     width: 15px;
     height: 15px;
     margin-top: 7px;
-    display: none;
+    margin-bottom: 7px;
+    vertical-align: middle;
+    /* display: none; */
 }
 
 .name {
     float: left;
-    padding-left: 7px;
+    padding-left: 10px;
     padding-top: 3px;
 }
 
