@@ -32,14 +32,5 @@ $(document).ready(function() {
       content: ""
     };
     listData.push(data);
-    // $(".delete").click( function () {
-    // });
-  });
-  $(".delete").click( function () {
-    console.log("hit");
-    listData.remove();
-  });
-  $("#edit").keypress(function() {
-    console.log("pls");
   });
 });
