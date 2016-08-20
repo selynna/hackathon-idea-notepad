@@ -9,10 +9,14 @@ html, body {
     font-weight: 200;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .left-menu {
     height: 100%;
     background-color: #5229a3;
-    width: 20%; 
+    width: 20%;
     color: #C7B2F1;
     position: relative;
 }
@@ -22,17 +26,6 @@ html, body {
     position: absolute;
     bottom: 9px;
 }
-
-.button {
-    background-color: #ECE9F2;
-    color: #49425B;
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    float: right;
-    font-weight: 500;
-}
-
 
 .add_button {
     background-color: #ECE9F2;
@@ -53,35 +46,61 @@ html, body {
 
 .entry:hover .delete_button {
     display: block;
-  
+
+}
+
+.entry {
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    padding: 5px;
 }
 
 .entry:hover {
     background-color: #725C9E !important;
 }
 
-.entry {
-    width: 100%;
-    height: 30px;
-    vertical-align: middle;
+.name {
+    flex: 100 1 auto;
+    font-size: 1.2em;
 }
 
-.delete_button {
-    float: right;
-    width: 15px;
-    height: 15px;
-    margin-top: 7px;
-    margin-bottom: 7px;
+.right {
+    flex: 0 1 25px;
+    text-align: center;
     vertical-align: middle;
     /* display: none; */
 }
 
-.name {
-    float: left;
-    padding-left: 10px;
-    padding-top: 3px;
+.right .button {
+    background-color: #ECE9F2;
+    color: #49425B;
+    border-radius: 50%;
+    font-weight: 500;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    line-height: 20px;
 }
 
 #add {
-    
+
+}
+
+.entries .title {
+  padding-left: 8px;
+  font-size: 1.5em;
+}
+
+.expanded-entry {
+  width: 80%;
+}
+.expanded-entry textarea {
+  width: 100%;
+  height: 100%;
+}
+.expanded-entry textarea:focus {
+  box-shadow: none;
+  outline: 0;
+  border: none;
 }
