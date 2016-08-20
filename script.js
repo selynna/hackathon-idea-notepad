@@ -12,7 +12,7 @@ $(document).ready(function() {
   listData.on("child_added", function (idea) {
     var entryDOM = $("<div class='entry' name='"+idea.val().name+"'></div>");
     var entry_NameDOM = $('<div class="name">' + idea.val().name + '</div>');
-    var entry_ButtonDOM = $('<div class="delete_button button delete">-</div>');
+    var entry_ButtonDOM = $('<div class="right"><div class="delete_button button" class="delete">-</div> </div>');
     entryDOM.append(entry_NameDOM);
     entryDOM.append(entry_ButtonDOM);
     $(".entries").append(entryDOM);
